@@ -25,11 +25,11 @@ Then, you can add rules under the appropriate quality profile.
 
 ### Few code smell and rules ###
 
-> **AvoidPublicBooleanParameterRuleRule** - It enforces SRP principle. If a public method has a boolean parameter, which means the method is performing more than one responsibility.
+> **AvoidPublicBooleanParameterRule** - It enforces SRP. If a public method has a boolean parameter, which means the method is performing more than one responsibility.
 
 >**AvoidMultipleParameterRule** - To keep the API definition simple and concise, avoid using more than two parameters.
 
->**AvoidNullCheckInPrivateMethodRule** - It enforces SRP principle by identifying the null checking inside the private method. This leads to more than one responsibility, similar to boolean input parameter, if-else branch with null and non-null value. It avoids defensive way of programming with lot of null-checks inside any private methods. The validity of the input parameters should have been done in the public methods. 
+>**AvoidNullCheckInPrivateMethodRule** - It enforces SRP by identifying the null checking inside the private method. This leads to more than one responsibility, similar to boolean input parameter, if-else branch with null and non-null value. It avoids defensive way of programming with lot of null-checks inside any private methods. The validity of the input parameters should have been done in the public methods. 
 
 > **PrivateMethodPositionRule** - It improves readability of a class, push all the private methods to the bottom of the class and keep the public methods at the top.
 Anyone who reads the class would be interested in public methods initially, also the tiny private methods can be mostly understandable by its name.
