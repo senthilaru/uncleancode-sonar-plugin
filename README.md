@@ -6,11 +6,11 @@ Inspired by the book clean code by Robert Martin (Uncle Bob).
 ### Seven Axes of Quality ###
 It aims to cover the last two axes.
 
-  ~~1. Potential bugs 
- 2. Coding rules 
- 3. Tests
- 4. Duplications 
- 5. Comments~~ 
+ 1. ~~Potential bugs~~ 
+ 2. ~~Coding rules~~ 
+ 3. ~~Tests~~
+ 4. ~~Duplications~~ 
+ 5. ~~Comments~~ 
  6. **Architecture and design**
  7. **Complexity**
  
