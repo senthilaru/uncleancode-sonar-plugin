@@ -1,4 +1,4 @@
-# UnClean Code Sonar Plugin #
+# Unclean Code Sonar Plugin #
 The unclean code sonar plugin aims to capture complex code, metrics of design and architectural level. 
 Provides a guided way for the developers to improve code quality.
 Inspired by the book clean code by Robert Martin (Uncle Bob).
