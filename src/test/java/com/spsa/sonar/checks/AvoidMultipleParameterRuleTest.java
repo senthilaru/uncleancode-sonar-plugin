@@ -5,7 +5,7 @@ import org.sonar.java.checks.verifier.JavaCheckVerifier;
 
 import com.spsa.sonar.java.checks.AvoidMultipleParameterRule;
 
-public class AvoidMultipleParameterCheckTest {
+public class AvoidMultipleParameterRuleTest {
 
     @Test
     public void detected() {
@@ -14,6 +14,6 @@ public class AvoidMultipleParameterCheckTest {
         // In the test file, lines which should raise an issue have been
         // commented out
         // by using the following syntax: "// Noncompliant {{EXPECTED_MESSAGE}}"
-        JavaCheckVerifier.verify("src/test/files/AvoidMultipleParametersCheck.java", new AvoidMultipleParameterRule());
+        JavaCheckVerifier.verify("src/test/files/AvoidMultipleParametersRuleCheck.java", new AvoidMultipleParameterRule());
     }
 }

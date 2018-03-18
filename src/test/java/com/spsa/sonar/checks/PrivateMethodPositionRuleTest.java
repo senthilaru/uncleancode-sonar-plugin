@@ -5,7 +5,7 @@ import org.sonar.java.checks.verifier.JavaCheckVerifier;
 
 import com.spsa.sonar.java.checks.PrivateMethodPositionRule;
 
-public class PrivateMethodPositionCheckTest {
+public class PrivateMethodPositionRuleTest {
 
     @Test
     public void detected() {

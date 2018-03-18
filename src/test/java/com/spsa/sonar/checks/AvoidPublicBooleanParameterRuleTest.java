@@ -5,7 +5,7 @@ import org.sonar.java.checks.verifier.JavaCheckVerifier;
 
 import com.spsa.sonar.java.checks.AvoidPublicBooleanParameterRule;
 
-public class AvoidPublicBooleanParameterCheckTest {
+public class AvoidPublicBooleanParameterRuleTest {
 
     @Test
     public void detected() {

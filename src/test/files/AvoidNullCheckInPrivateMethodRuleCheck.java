@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class AvoidNullCheckInPrivateMethodCheck {
+public class AvoidNullCheckInPrivateMethodRuleCheck {
 
     public String aMethod(String name) { 
         greetName(name); 

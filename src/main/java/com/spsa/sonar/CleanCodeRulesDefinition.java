@@ -6,7 +6,7 @@ import org.sonar.squidbridge.annotations.AnnotationBasedRulesDefinition;
 
 public class CleanCodeRulesDefinition implements RulesDefinition {
 
-    public static final String REPOSITORY_KEY = "cleancode";
+    public static final String REPOSITORY_KEY = "uncleancode";
 
     @Override
     public void define(Context context) {

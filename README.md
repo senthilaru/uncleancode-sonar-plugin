@@ -1,8 +1,18 @@
-# Clean Code Sonar Rules Plugin #
-The clean code sonar plugin aims to capture complex code, metrics of design and architectural level. 
+# UnClean Code Sonar Plugin #
+The unclean code sonar plugin aims to capture complex code, metrics of design and architectural level. 
 Provides a guided way for the developers to improve code quality.
+Inspired by the book clean code by Robert Martin (Uncle Bob).
 
+### Seven Axes of Quality ###
+It aims to cover the last two axes.
 
+ 1. Potential bugs 
+ 2. Coding rules 
+ 3. Tests
+ 4. Duplications 
+ 5. Comments 
+ 6. **Architecture and design**
+ 7. **Complexity**
  
 
 ### Build Steps ###
@@ -19,7 +29,7 @@ and restart the sonar server.
 ### How to use this in sonar quality profile ###
 
 Login to your sonar server: http://localhost:9000. 
-Search for rule repository with the `cleancode`, it will list down all the rules bundled in this plugin.
+Search for rule repository with the `uncleancode`, it will list down all the rules bundled in this plugin.
 Then, you can add rules under the appropriate quality profile.
 
 
