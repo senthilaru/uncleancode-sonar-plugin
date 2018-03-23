@@ -11,7 +11,7 @@ public class CleanCodeRulesDefinition implements RulesDefinition {
     @Override
     public void define(Context context) {
         final NewRepository repository = context.createRepository(REPOSITORY_KEY, Java.KEY);
-        repository.setName("CleanCodeRepo");
+        repository.setName("UnCleanCodeRepo");
 
         AnnotationBasedRulesDefinition.load(repository, "java", RulesList.getChecks());
         AnnotationBasedRulesDefinition.load(repository, "javascript", RulesList.getJSChecks());
