@@ -30,8 +30,4 @@ public class RulesList {
         return ImmutableList.<Class> builder().addAll(getJavaChecks()).build();
     }
 
-    public static List<Class<? extends JavaCheck>> getJavascriptChecks() {
-        return ImmutableList.<Class<? extends JavaCheck>> builder().add(AvoidPublicBooleanParameterRule.class).build();
-    }
-
 }

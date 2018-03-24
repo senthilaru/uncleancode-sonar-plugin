@@ -14,7 +14,7 @@ public class CleanCodeRulesDefinition implements RulesDefinition {
         repository.setName("UnCleanCodeRepo");
 
         AnnotationBasedRulesDefinition.load(repository, "java", RulesList.getChecks());
-        AnnotationBasedRulesDefinition.load(repository, "javascript", RulesList.getJSChecks());
+//        AnnotationBasedRulesDefinition.load(repository, "javascript", RulesList.getJSChecks());
         repository.done();
     }
 
