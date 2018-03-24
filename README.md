@@ -14,16 +14,11 @@ It aims to cover the last two axes.
  6. **Architecture and design**
  7. **Complexity**
  
-
-### Build Steps ###
-
-`mvn clean install` 
-
-
 ### How to use this in local sonar server ###
 
-Copy the generated `sonar-cleancode-plugin-0.0.1-SNAPSHOT.jar` from `/target` folder into the `SONAR_INSTALLED_PATH\extensions\plugins`
-and restart the sonar server.
+[Download](https://github.com/senthilaru/uncleancode-sonar-plugin/blob/master/target/uncleancode-sonar-plugin-0.0.1-SNAPSHOT.jar) the jar here and copy into the `SONAR_INSTALLED_PATH\extensions\plugins`
+and restart the sonar server. 
+If you dont have local setup of sonar, follow the instruction and [setup local sonar](https://www.sonarqube.org/downloads/).
 
 
 ### How to use this in sonar quality profile ###
