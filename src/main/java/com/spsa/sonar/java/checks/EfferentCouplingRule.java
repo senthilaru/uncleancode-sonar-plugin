@@ -32,23 +32,16 @@ public class EfferentCouplingRule extends BaseTreeVisitor implements JavaFileSca
 		this.context = context;
 		classNames = new HashMap<>();
 		scan(context.getTree());
-//		 System.out.println(PrinterVisitor.print(context.getTree()));
-		System.out.println("className:"+classNames.size() + " : classNames.size():"+classNames);
 	}
 
 	@Override
 	public void visitModifier(ModifiersTree tree) {
-		// if(tree.size() > 0)
-		// System.out.println("ModifiersTree Size: "+tree.size() + " : "+
-		// tree.get(0).kind());
-		// System.out.println("tree.modifiers():"+tree.modifiers());
 		super.visitModifier(tree);
 	}
 
 	@Override
 	public void visitIdentifier(IdentifierTree tree) {
 		if (tree.symbolType().isUnknown() && tree.parent().is(Kind.VARIABLE)  ) {
-			System.out.println(tree.name() + ":"+tree.parent().kind() );
 			classNames.compute(tree.name(), (k,v) -> v == null? 1: v + 1);
 			incrementStatmentAndReport(tree);
 		}

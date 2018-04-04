@@ -24,8 +24,9 @@ public class CleanCodeFileCheckRegistrar implements CheckRegistrar {
 	 */
 	@SuppressWarnings("unchecked")
 	public static Class<? extends JavaCheck>[] checkClasses() {
-		return new Class[] { AvoidPublicBooleanParameterRule.class, AvoidMultipleParameterRule.class,
-				AvoidNullCheckInPrivateMethodRule.class, PrivateMethodPositionRule.class, ComplexFunctionRule.class };
+		Class[] rules = new Class[RulesList.getJavaChecks().size()];
+		RulesList.getJavaChecks().toArray(rules);
+		return rules;
 	}
 
 	/**
