@@ -52,7 +52,7 @@ public class AvoidMultipleParameterRule extends BaseTreeVisitor implements JavaF
     @Override
     public void visitMethod(MethodTree tree) {
 
-        if (tree.symbol().parameterTypes().size() > 2) {
+        if (!tree.symbol().isPrivate() && tree.symbol().parameterTypes().size() > 2) {
             context.reportIssue(this, tree, "Passing more than two parameters in a method increases complexity");
         }
         super.visitMethod(tree);
