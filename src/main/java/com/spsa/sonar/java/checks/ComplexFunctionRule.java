@@ -47,7 +47,9 @@ public class ComplexFunctionRule extends BaseTreeVisitor implements JavaFileScan
 
 	@Override
 	public void visitVariable(VariableTree tree) {
-		incrementStatmentAndReport(tree);
+		if(tree.parent().is(Kind.BLOCK)) {
+			incrementStatmentAndReport(tree);
+		}
 		super.visitVariable(tree);
 	}
 
